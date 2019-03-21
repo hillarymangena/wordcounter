@@ -1,0 +1,15 @@
+<h2>Quick Word Counter!</h2>
+
+<a href="{% url 'about' %}">About Page</a>
+<hr/>
+
+<form action="{% url 'count' %}">
+
+    <textarea cols='70' rows='5' name='fulltext' placeholder="Enter your text here.."></textarea>
+    <br/>
+    <input type='submit' value='Count!' cols='5'/>
+
+
+</form>
+
+

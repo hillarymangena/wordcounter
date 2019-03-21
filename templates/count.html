@@ -1,0 +1,19 @@
+<h3>Results Page</h3>
+
+<a href='{% url "home" %}'>Count New Text</a>
+<a href="{% url 'about' %}">About Page</a>
+<br/>
+
+<h4>There are {{ count }} words in your text</h4>
+
+<h4>Original Text:</h4>
+<p>{{ fulltext }}</p>
+
+<h3>Word Frequency:</h3>
+
+{% for word, total in sl %}
+
+{{ word }} : {{ total }}
+<br/>
+
+{% endfor %}
